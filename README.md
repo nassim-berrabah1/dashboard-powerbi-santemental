@@ -1,56 +1,62 @@
-## 🧠 Dashboard Power BI — Santé Mentale des Jeunes Adultes
+# 🧠 Dashboard Power BI — Santé Mentale des Jeunes Adultes
 
-Quels facteurs comportementaux et environnementaux (sommeil, stress, alimentation, pression académique) constituent les principaux déterminants de la dépression et des troubles de santé mentale chez les jeunes adultes ?
-
+Quels facteurs comportementaux et environnementaux (sommeil, stress, alimentation) constituent les principaux déterminants des troubles de santé mentale chez les jeunes adultes ?
 
 ## 📌 Contexte
-Projet réalisé en mars 2026 dans le cadre de la formation BUT Informatique — Sciences des Données (IUT Villetaneuse, Université Sorbonne Paris Nord), en binôme avec Bajiry Diakite.
+Projet réalisé en mars 2026 dans le cadre de la formation BUT2 passerelle Technologie de l'information — Parcours Sciences des Données (IUT Villetaneuse, Université Sorbonne Paris Nord), en binôme avec Bajiry DIAKITE.
 
-Source des données : Kaggle — Student Depression Dataset
-Données réelles : 3 000 individus, 7 pays (USA, Inde, Japon, Australie, Canada, Brésil, Allemagne)
-Outil : Power BI Desktop
+* **Source des données :** Kaggle — Student Depression Dataset
+* **Volume :** 3 000 individus, répartis sur 7 pays (USA, Inde, Japon, Australie, Canada, Brésil, Allemagne)
+* **Outil utilisé :** Power BI Desktop
 
+---
 
-##  📊 Aperçu du Dashboard
-Page 1 — Vue d'ensemble géographique
-<img width="1274" height="712" alt="image" src="https://github.com/user-attachments/assets/9eaa8a55-43a6-4b0c-80fc-2ff952a45546" />
+## 📊 Structure du Rapport (2 pages)
 
-Page 2 — Analyse comportementale & facteurs de risque
-<img width="1273" height="712" alt="image" src="https://github.com/user-attachments/assets/f527b3e7-4695-4078-aa83-727c195fead6" />
+### Page 1 — Vue d'ensemble géographique
+L'objectif de cette page est de situer globalement la population étudiée et de fournir des filtres globaux pour l'exploration du rapport.
+* **KPIs principaux :** Nombre total de personnes étudiées (3 000), Âge Moyen (~41 ans), Âge minimum (18) et Âge maximum (64).
+* **Treemap :** Répartition et volume des individus selon leur pays d'origine.
+* **Carte géographique (Bing Maps) :** Localisation visuelle des répondants à l'échelle mondiale.
+* **Filtres (Slicers) :** Filtrage interactif par tranche d'âge, genre et pays.
 
-## 🗂️ Structure du rapport (2 pages)
-Page 1 — Vue d'ensemble
+### Page 2 — Analyse comportementale & Facteurs de risque
+Cette page creuse les corrélations entre le mode de vie des individus et leur indicateur de bien-être.
+* **Scatter Plot (Nuage de points) :** Analyse de la corrélation entre le volume d'heures de sommeil et le score de bonheur.
+* **Tableau croisé :** Analyse croisée du score de bonheur moyen selon la condition de santé mentale (Anxiety, Depression, PTSD, Bipolar, None) et le niveau de stress ressenti (Low / Moderate / High).
+* **Donut Charts :** Répartition de la population par genre et par niveau de stress global.
+* **Pie Chart :** Proportion des différents types de régimes alimentaires (Junk Food, Balanced, Vegetarian, Keto, Vegan).
 
-KPI : Nombre total d'individus (3 000), Score de Bonheur moyen (5,40), âge min/max
-Treemap : Répartition des individus par âge et par pays
-Carte géographique (Bing Maps) : Répartition géographique des répondants
-Slicers interactifs : Filtre par tranche d'âge, genre et pays
-
-Page 2 — Facteurs comportementaux & santé mentale
-
-Scatter plot : Corrélation entre heures de sommeil et score de bonheur
-Tableau croisé DAX : Score de bonheur moyen par condition mentale (Anxiety, Depression, PTSD, Bipolar...) × niveau de stress (Low / Moderate / High)
-Donut chart : Répartition par genre (Female / Male / Other)
-Donut chart : Répartition par niveau de stress
-Pie chart : Types de régimes alimentaires (Junk Food, Balanced, Vegetarian, Keto, Vegan)
-
+---
 
 ## ⚙️ Compétences Power BI mobilisées
-CompétenceDétailImportation de donnéesFichier CSV KaggleNettoyageTraitement des valeurs manquantes, typage des colonnesModélisationSchéma en étoile (table faits + dimensions)Mesures DAXScore moyen, comptages conditionnels, totaux croisésVisuelsKPI cards, scatter plot, treemap, donut, pie, carte Bing MapsInteractivitéSlicers, cross-filtering entre visuelsEsthétiqueThème cohérent, titres clairs, mise en page soignée
 
-## 🔍 Principaux résultats
+| Compétence | Détail |
+| :--- | :--- |
+| **Importation & Nettoyage** | Connexion au fichier CSV de Kaggle, traitement des types de données et nettoyage des colonnes clés. |
+| **Préparation des données** | Modélisation basée sur une table unique optimisée pour le filtrage croisé (Cross-filtering). |
+| **Calculs DAX** | Création de mesures pour le calcul des moyennes (Score de bonheur moyen) et des volumes globaux. |
+| **Visualisation** | Choix et configuration des visuels (KPI cards, scatter plot, treemap, donuts) adaptés aux types de variables. |
+| **Interactivité** | Mise en place de segments de filtrage synchronisés pour une exploration fluide. |
 
-Le manque de sommeil est corrélé à un score de bonheur plus faible
-Le niveau de stress "Low" est associé aux scores de bonheur les plus élevés, toutes conditions confondues
-La répartition des régimes alimentaires est quasi-uniforme (~20% chacun), sans influence notable isolée
-Les individus atteints de PTSD avec un faible niveau de stress affichent paradoxalement un score de bonheur plus élevé (1 189)
+---
 
-## 📁 Contenu
+## 🔍 Principaux résultats de l'analyse
+
+* **Sommeil & Bien-être :** Le graphique met en évidence une corrélation positive claire : un volume de sommeil plus élevé est globalement associé à un meilleur score de bonheur.
+* **Impact majeur du stress :** Un niveau de stress qualifié de "Low" est systématiquement lié aux scores de bonheur moyens les plus élevés, et ce, peu importe la condition de santé mentale de l'individu.
+* **Uniformité des régimes :** La répartition des habitudes alimentaires est presque parfaitement équitable (~20% pour chaque profil), montrant que ce facteur est homogène au sein de l'échantillon.
+
+---
+
+## 📁 Contenu du dépôt
 📦 dashboard-sante-mentale-powerbi
- - 📄 rapport.pbix   ← Fichier Power BI
- - 📄 rapport.pdf
- - 📄 README.md
+ - 📄 rapport.pbix   ← Fichier source Power BI Desktop
+ - 📄 rapport.pdf    ← Export du dashboard pour lecture rapide
+ - 📄 README.md     ← Présentation du projet
 
-## 👤 Auteur
-Nassim Berrabah — BUT Informatique, Sciences des Données
-IUT de Villetaneuse, Université Sorbonne Paris Nord
+## 👤 Auteurs
+* **Nassim BERRABAH**
+* **Bajiry DIAKITE**
+*  BUT2 passerelle Technologie de l'information (Informatique, Sciences des Données) 
+* *IUT de Villetaneuse, Université Sorbonne Paris Nord*
