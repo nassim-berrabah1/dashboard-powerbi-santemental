@@ -20,12 +20,18 @@ L'objectif de cette page est de situer globalement la population étudiée et de
 * **Carte géographique (Bing Maps) :** Localisation visuelle des répondants à l'échelle mondiale.
 * **Filtres (Slicers) :** Filtrage interactif par tranche d'âge, genre et pays.
 
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/4fc81c9c-50bb-46f0-b9c8-c75d6a9d07dd" />
+
+
 ### Page 2 — Analyse comportementale & Facteurs de risque
 Cette page creuse les corrélations entre le mode de vie des individus et leur indicateur de bien-être.
 * **Scatter Plot (Nuage de points) :** Analyse de la corrélation entre le volume d'heures de sommeil et le score de bonheur.
 * **Tableau croisé :** Analyse croisée du score de bonheur moyen selon la condition de santé mentale (Anxiety, Depression, PTSD, Bipolar, None) et le niveau de stress ressenti (Low / Moderate / High).
 * **Donut Charts :** Répartition de la population par genre et par niveau de stress global.
 * **Pie Chart :** Proportion des différents types de régimes alimentaires (Junk Food, Balanced, Vegetarian, Keto, Vegan).
+
+<img width="1273" height="712" alt="image" src="https://github.com/user-attachments/assets/f676494a-eb7e-49b6-add0-90c09ab0d252" />
+
 
 ---
 
